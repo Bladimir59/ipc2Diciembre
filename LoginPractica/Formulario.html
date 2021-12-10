@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+Ingrese cliente
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <form class="form-group" [formGroup]="formulario" (ngSubmit)="submit()">
+                    <div class="md-3">
+                      <label for="CUI">CUI :</label>
+                      <input type="text" id="CUI" name="CUI" placeholder="CUI" requir formControlName="CUI" class="form-control" />
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" requir formControlName="nombre"
+                          class="form-control" />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="apellido" required formControlName="number2"
+                          class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="numero">Departamento:</label>
+                      <input type="number" id="numero" name="numero" placeholder="numero" required formControlName="numero"
+                        class="form-control" />
+                    </div>
+                                       
+                    <hr class="mb-4" />
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">
+                      Guardar
+                    </button>
+                  </form>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>
